@@ -1,0 +1,95 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Disable horizontal scrolling */
+  box-sizing: border-box;
+  background-color: white;
+}
+.heading {
+  height: 90px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #504b50;
+}
+button {
+  cursor: pointer;
+}
+img {
+  margin-left: 40px;
+  width: 40px;
+  height: 40px;
+}
+h1 {
+  margin-left: 10px;
+  margin-bottom: 0px;
+  font-size: 50px; /* Adjust font size as needed */
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-weight: bold; /* Adjust font weight as needed */
+}
+.add-task {
+  width: 80%;
+}
+.add-task-btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table {
+  width: 80%;
+  margin: 30px auto 0 auto;
+  border-collapse: collapse; /* Ensures borders don't add extra width */
+  table-layout: auto;
+}
+/* Hide the pop-up by default */
+.popup {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* background overlay */
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  display: block;
+  width: 600px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#trashBtn {
+  width: 30px;
+  font-size: 20px;
+}
+
+.bin-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 0px;
+  cursor: pointer;
+}
